@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>अत्रिस्मृति - वाङ्गमय</title>
+    <link rel="icon" type="icon" href="../../../content/icon.png">
+    <!-- Meta Tags : Start-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags : Ends-->
+
+    <!-- Stylesheet Linking : Starts-->
+    <link rel="stylesheet" type="text/css" href="../style-reader.css">
+    <!-- Stylesheet Linking : Ends-->
+
+    <!-- JavaScript Linking : Starts-->
+    <script type="text/javascript">
+        function fire() {
+            var name = document.getElementById("select").value;
+            if (name="") {
+                alert("चुनें")
+            } else {
+                window.location = "https://vedicbooks.cf/smriti/atrismriti/" +name;
+            }
+        }
+    </script>
+    <!-- Javascript Linking : Ends-->
+
+    <!-- SEO Tools : Starts ::: SEO Tools : Starts ::: SEO Tools : Starts ::: SEO Tools : Starts ::: SEO Tools : Starts :::-->
+    <!-- SEO Tools : Ends ::: SEO Tools : Ends ::: SEO Tools : Ends ::: SEO Tools : Ends ::: SEO Tools : Ends ::: SEO Tools : Ends :::-->
+</head>
+<body>
+    <h1 style="position: relative;width:100%;background-color:orange;font-family:Kalam;text-align: center;top: 0;">वाङ्गमय</h1>
+
+
+    <!-- Content - selsctor Starts (MOBILE AND DESKTOP) : To select where-->
+    <div class="content-sel">
+        <div id="content-sel-book">
+            अत्रिस्मृति
+        </div>
+        <div>
+            <select class="select-1" id="select" onChange="fire()"> <!-- Had to choose class in order to have same id for both tablet and dektop to make fire() function work-->
+                <option value=""><b>भूमिका (आवश्यक)</b></option>
+                <option value="1-100">श्लोक 1-100</option>
+                <option selected value="101-200">श्लोक 101-200</option>
+                <option value="201-300">श्लोक 201-300</option>
+                <option value="301-398">श्लोक 301-398</option>
+            </select>   
+        </div>
+    </div>
+    <!-- Contect - selector Ends (MOBILE AND DESKTOP) -->
+
+    <!-- Content - selsctor Starts (TABLETS) : To select where-->
+    <div class="content-sel-tab">
+        <div id="content-sel-book-tab">
+            अत्रिस्मृति
+        </div>
+        <div>
+            <select class="select-1-tab" id="select" onChange="fire()">
+                <option value=""><b>भूमिका (आवश्यक)</b></option>
+                <option value="1-100">श्लोक 1-100</option>
+                <option selected value="101-200">श्लोक 101-200</option>
+                <option value="201-300">श्लोक 201-300</option>
+                <option value="301-398">श्लोक 301-398</option>
+            </select>   
+        </div>
+    </div>
+    <!-- Contect - selector Ends (TABLETS -->
+   
+    <!-- Content Goes Here -->
+    <div class="content">
+        
+    </div>
+    <!-- Content ends here -->
+</body>
+</html>

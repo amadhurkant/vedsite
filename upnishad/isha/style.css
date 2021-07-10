@@ -1,0 +1,15 @@
+.select-1 {
+   position: relative;
+   top: 29px;
+   width: 95%;
+   height: 40px;
+}
+
+@media screen and (max-width: 991px) {
+ .select-1-tab {
+   position: relative;
+   top: -32px;
+   left: 200px;
+   height: 30px;
+ }
+}

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Asar');
+
+.content {
+   display: inline-block;
+   min-height: 10px;
+   max-width: 800px;
+   min-width: 10px;
+   border-style: solid;
+   border-color: red;
+   border-right-width: 2px;
+   border-left-width: 2px;
+   border-bottom-width: 2px;
+   border-top-width: 8px;
+   position: relative;
+   top: -110px;
+   left: 450px;
+   word-wrap: break-word;
+   padding-left: 10px;
+   padding-right: 10px;
+   box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: left;
+   font-family: 'Noto Sans';
+   font-size: 18px;
+   clear: left;
+}
+
+.content-sel {
+   height: 150px ;
+   width: 280px ;
+   border-style: solid ;
+   border-color: black ;
+   border-width: 0.5px ;
+   position: relative ;
+   left: 50px ;
+   top: 210px;
+   box-shadow: 0px 0.2px ;
+   word-wrap: break-word ;
+   padding-left: 10px ;
+   padding-right: 10px ;
+}
+
+#content-sel-book {
+   width: 300px ;
+   height: 40px ;
+   position: relative ;
+   left: -10px ;
+   border-top-width: 0px ;
+   border-right-width: 0px ;
+   border-left-width: 0px ;
+   border-bottom-width: 0.5px ;
+   border-style: solid ;
+   border-color : black ;
+   text-align: center ;
+   font-family: Asar;
+   padding-top: 5%;
+}
+
+.content-sel-tab {
+   visibility: hidden;
+   overflow: hidden;
+}
+
+#content-sel-book-tab {
+   visibility: hidden;
+   overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+ .content {
+   left:40px;
+   margin-right: 15%;
+ }
+
+ .content-sel {
+   visibility: hidden;
+   overflow: hidden;
+ }
+
+ #content-sel-book {
+   visibility: hidden;
+   overflow: hidden;
+ }
+
+ .content-sel-tab {
+   visibility: visible;
+   overflow: scroll;
+   height: 35px;
+   width: 400px;
+   margin-right: 5%;
+   margin-left: 5%;
+   border-width: 1px;
+   border-style: solid;
+   border-color: black;
+   position: relative;
+   top: -150px;
+   padding: 0px;
+ }
+
+ #content-sel-book-tab {
+   visibility: visible;
+   overflow: scroll;
+   width: 25%;
+   height: 35px;
+   padding-top: 0.2px;
+   text-align: center;
+   font-family: 'Asar';
+   border-top-width: 0px ;
+   border-right-width: 1px ;
+   border-left-width: 0px ;
+   border-bottom-width: 0px ;
+   border-style: solid ;
+ }
+
+}
+
+@media screen and (max-width: 600px) {
+   .content {
+      margin-right: 15%;
+      left: 20px;
+      top: 100px;
+      overflow: scroll;
+      bottom: 1000px;
+      margin-bottom: 20%;
+   }
+
+   .content-sel {
+      visibility: visible;
+      overflow: scroll;
+      left: 20px;
+      position: relative;
+      top: 45px;
+   }
+
+   #content-sel-book {
+      visibility: visible;
+      overflow: scroll;
+   }
+
+   .content-sel-tab {
+   visibility: hidden;
+   overflow: scroll;
+   }
+
+   #content-sel-book-tab {
+   visibility: hidden;
+   overflow: scroll;
+   }
+}
